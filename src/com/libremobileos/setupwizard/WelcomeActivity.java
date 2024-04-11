@@ -6,7 +6,6 @@
 
 package com.libremobileos.setupwizard;
 
-import static com.libremobileos.setupwizard.SetupWizardApp.ACTION_ACCESSIBILITY_SETTINGS;
 import static com.libremobileos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
 
 import android.content.Intent;
@@ -21,6 +20,9 @@ import com.google.android.setupcompat.util.SystemBarHelper;
 import com.libremobileos.setupwizard.util.SetupWizardUtils;
 
 public class WelcomeActivity extends SubBaseActivity {
+
+    private static final String ACTION_ACCESSIBILITY_SETTINGS =
+            "android.settings.ACCESSIBILITY_SETTINGS_FOR_SUW";
 
     @Override
     protected void onStartSubactivity() {
